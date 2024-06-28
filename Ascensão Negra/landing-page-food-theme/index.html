@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>ASCENSÃO NEGRA</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#content">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Conheça nossos planos!</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Como Surgiu?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Quem somos?</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Login!
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Ver Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Ascensão Negra
+                </h1>
+
+                <p class="description">
+                    Fortalecento raizes, inspirando futuros
+                </p>
+                <!-- 
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver Planos
+                    </a>
+
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51) 92342-3243
+                    </a>
+                </div> -->
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/hero.png" alt="">
+                <img src="src/images/hero2.png" alt="">
+                <!-- <img src="src/images/hero4.png" alt=""> -->
+                <img src="src/images/hero3.png" alt="">
+
+            </div>
+        </section>
+
+        <section id="menu">
+            <h3 class="section-subtitle">Planos para você começar</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="pricing-block-content">
+                        <p class="pricing-plan">Você ja impactou uma mulher preta hoje?</p>
+                        <div class="pricing-note">free forever</div>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="pricing-block-content">
+                        <p class="pricing-plan">Plano Inspiração</p>
+                        <div class="pricing-note">3 Audios para iniciar o
+                            ciclo de mentoria</div>
+                        <ul class="check-list" role="list">
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Auto conhecimento
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Mapeamento das competências
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Rede de relacionamentos
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="dish">
+                    <div class="pricing-block-content">
+                        <p class="pricing-plan">Plano Ascensão</p>
+                        <div class="pricing-note">free forever</div>
+                        <ul class="check-list" role="list">
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Lorem Ipsum
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Lorem Ipsum
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Lorem Ipsum
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Lorem Ipsum
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="pricing-block-content">
+                        <p class="pricing-plan">Plano Raízes</p>
+                        <div class="pricing-note">5 encontros online</div>
+                        <ul class="check-list" role="list">
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Auto conhecimento
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Mapeamento das competências
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Inteligência emocional
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Alinhamento de auto conhecimento + competências
+                            </li>
+                            <li class="check-list-item">
+                                <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="16"
+                                    viewBox="0 0 30 30.000001" zoomAndPan="magnify" width="16"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                    style="color:#A15529;">
+                                    <defs>
+                                        <clipPath id="id1">
+                                            <path fill="#A15529" clip-rule="nonzero"
+                                                d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#id1)">
+                                        <path fill-rule="nonzero" fill-opacity="1"
+                                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                                            fill="#A15529"></path>
+                                    </g>
+                                </svg>Rede de relacionamentos
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/chef.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h3 class="section-subtitle">
+                    Por isso nascemos
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback-content">
+
+                        <p>
+                            Nascemos da dificuldade de mulheres negras na jornada para ascensão de suas jornadas
+                            profissionais.
+                        </p>
+                    </div>
+
+
+                    <h3 class="section-subtitle">
+                        Por que existimos?
+                    </h3>
+                    <div class="feedback-content">
+                        <p>
+                            Para impactar a vida de mulheres negras de uma maneira próxima formando um grande
+                            Quilombo.
+                        </p>
+                    </div>
+
+
+                </div>
+                <h3 class="section-subtitle">
+                    Como a Ascensão Negra fará isso?
+                </h3>
+                <div class="feedback-content">
+                    <p>
+                        Oferendo mentoria de carreira acessível e com direcionamento para mulheres negras, ajudando
+                        a transformar suas jornadas.
+                    </p>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Larissa Kich
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer> -->
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
